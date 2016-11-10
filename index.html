@@ -13,10 +13,15 @@
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
     <link rel="import" href="../../bower_components/polymer/polymer.html">
-    <link rel="import" href="/src/scs-app/roca-link.html">
+    <link rel="import" href="/src/scs-app/embed-link.html">
   </head>
   <body>
-    <a href="/src/scs-app/remote-component.html" is="roca-link">Test Link</a>
-    <a href="/src/scs-app/remote-component-two.html" is="roca-link">Test Link</a>
+    <h1>Embedding remote components:</h1>
+    <a href="/src/scs-app/remote-component-one.html" is="embed-link">Link to RC1</a>
+    <a href="/src/scs-app/remote-component-two.html" is="embed-link">Link to RC2</a>
+    
+    <h1>As Link:</h1>
+    <a href="/src/scs-app/remote-component-one.html" is="link">Link to RC1</a>
+    <a href="/src/scs-app/remote-component-two.html" is="link">Link to RC2</a>
   </body>
 </html>
