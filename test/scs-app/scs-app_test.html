@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>scs-app test</title>
+
+    <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../../src/scs-app/scs-app.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <scs-app></scs-app>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('scs-app', function() {
+        test('instantiating the element works', function() {
+          var element = fixture('basic');
+          assert.equal(element.is, 'scs-app');
+        });
+      });
+    </script>
+  </body>
+</html>

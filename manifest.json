@@ -1,0 +1,6 @@
+{
+  "name": "scs",
+  "short_name": "scs",
+  "start_url": "/",
+  "display": "standalone"
+}
