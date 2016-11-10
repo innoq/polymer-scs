@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="remote-component-two">
+  
+  <template>
+    <h2>-- Remote Component Two --</h2>
+    shows System Two content
+    
+    <a href="/src/scs-app/remote-component-three.html" is="embed-link">Link to RC3</a>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'remote-component-two'
+    });
+  </script>
+</dom-module>
+
+<html>
+  <body>
+    <remote-component-two></remote-component-two>
+  </body>
+</html>
