@@ -1,0 +1,27 @@
+<link rel="import" href="http://localhost:89/polymer/polymer.html">
+<link rel="import" href="http://localhost:89/embed-link/embed-link.html">
+
+<dom-module id="remote-component-two">
+  
+  <template>
+    <h2>-- Remote Component Two --</h2>
+    shows System Two content
+    
+    <h4>Embedding remote component three:</h4>
+    <a href="http://localhost:83/remote-component-three.html" is="embed-link">Link to RC3</a>
+    
+    <a href="http://localhost:83/remote-component-three.html" is="link">Link to RC3</a>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'remote-component-two'
+    });
+  </script>
+</dom-module>
+
+<html>
+  <body>
+    <remote-component-two></remote-component-two>
+  </body>
+</html>

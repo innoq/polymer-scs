@@ -1,0 +1,32 @@
+<link rel="import" href="http://localhost:89/polymer/polymer.html">
+
+<dom-module id="embed-link">
+
+  <template>
+    
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'embed-link',
+
+      extends: 'a',
+
+      parameters: {
+        href: String,
+        hidden: {
+          value: true
+        }
+      },
+
+      ready: function () {
+        this.importHref(this.href, function(e) {
+          let componentName = this.href.match(/([a-z\-_]*).html/)[1];
+          let component = document.createElement(componentName);
+          this.replaceWith(component);
+        });
+      }
+    })
+  </script>
+</dom-module>
