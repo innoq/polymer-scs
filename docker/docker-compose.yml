@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  assets:
+    image: scs-assets
+    ports:
+      - "89:80"
+    container_name: assets
+    
+  dashboard:
+    image: scs-dashboard
+    ports:
+      - "80:80"
+    container_name: dashboard
+    
+  sys1:
+    image: scs-sys1
+    ports:
+      - "81:80"
+    container_name: sys1
+    
+  sys2:
+    image: scs-sys2
+    ports:
+      - "82:80"
+    container_name: sys2
+    
+  sys3:
+    image: scs-sys3
+    ports:
+      - "83:80"
+    container_name: sys3

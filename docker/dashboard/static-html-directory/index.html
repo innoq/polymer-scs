@@ -10,18 +10,18 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
 
-    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="http://localhost:89/webcomponentsjs/webcomponents-lite.js"></script>
 
-    <link rel="import" href="../../bower_components/polymer/polymer.html">
-    <link rel="import" href="/src/scs-app/embed-link.html">
+    <link rel="import" href="http://localhost:89/polymer/polymer.html">
+    <link rel="import" href="embed-link.html">
   </head>
   <body>
     <h1>Embedding remote components:</h1>
-    <a href="/src/scs-app/remote-component-one.html" is="embed-link">Link to RC1</a>
-    <a href="/src/scs-app/remote-component-two.html" is="embed-link">Link to RC2</a>
+    <a href="http://localhost:81/remote-component-one.html" is="embed-link">Link to RC1</a>
+    <a href="http://localhost:82/remote-component-two.html" is="embed-link">Link to RC2</a>
     
     <h1>As Link:</h1>
-    <a href="/src/scs-app/remote-component-one.html" is="link">Link to RC1</a>
-    <a href="/src/scs-app/remote-component-two.html" is="link">Link to RC2</a>
+    <a href="http://localhost:81/remote-component-one.html" is="link">Link to RC1</a>
+    <a href="http://localhost:82/remote-component-two.html" is="link">Link to RC2</a>
   </body>
 </html>
