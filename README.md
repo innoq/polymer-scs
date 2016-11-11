@@ -52,7 +52,9 @@ Usage:
 * scs-sys1/2/3: Simulated systems 1,2 and 3
 * scs-dashboard: Simple entry system
 
-Since there is no DNS, systems are separated by ports
+Dashboard links to System 1 and 2. System 2 links to System 3.
+
+Since there is no DNS, systems are separated by ports:
 
 * 89 -> asset server
 * 80 -> Dashboard
