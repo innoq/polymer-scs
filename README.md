@@ -51,3 +51,11 @@ Usage:
 * scs-assets: Asset server with the required Polymer components
 * scs-sys1/2/3: Simulated systems 1,2 and 3
 * scs-dashboard: Simple entry system
+
+Since there is no DNS, systems are separated by ports
+
+* 89 -> asset server
+* 80 -> Dashboard
+* 81 -> System 1
+* 82 -> System 2
+* 83 -> System 3
