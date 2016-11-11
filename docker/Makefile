@@ -16,7 +16,7 @@ images:
 pushonly:
 	docker push $(URI):latest
 
-run: images
+run: images stop
 	docker-compose up -d
 
 stop:
